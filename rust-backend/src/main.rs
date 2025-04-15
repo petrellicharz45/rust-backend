@@ -1,8 +1,6 @@
 mod config;
-mod routes;
-
 use actix_web::{App, HttpServer};
-use routes::init_routes;
+use infrastruture::http::routes::init_routes;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
